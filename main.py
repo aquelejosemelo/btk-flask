@@ -16,6 +16,7 @@ def executar():
     arquivo = request.form['arquivo']
 
     # TODO: Incluir processamento aqui.
+    
     btk = BTK(arquivo)
     lAnalysis = btk.listar_analysis_metadata()
     #btk = BTK("A13F22RJ03.c3d")
