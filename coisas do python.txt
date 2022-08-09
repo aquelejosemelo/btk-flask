@@ -1,0 +1,47 @@
+//Arquivo com alguns problemas no uso do Python no Sarah
+
+//Programa (IDE):
+//VS code
+
+//Interpretador:
+//3.10
+
+//Instalar pacotes:
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org <PACOTE>
+
+Forma definitiva
+// No PowerShell
+Get-Item WSMan:\localhost\Client\TrustedHosts
+//Se a lista de trusted-host, adiciona com a linha
+Set-Item WSMan:\localhost\Client\TrustedHosts -Value <endereço>
+
+//Se já tem conteúdo de trusted-host ou se deseja adicionar mais um, seguir os passos
+$List = (Get-Item WSMan:\localhost\Client\TrustedHosts).value //copia o valor para uma variável List
+Set-Item WSMan:\localhost\Client\TrustedHosts -Value "$List, <endereço>" //adiciona novo endereço.
+
+*============================================================*
+    PARA TRABLAHA RNO PROJETO DO INDICE DE VARIABILIDADE
+*============================================================*
+cd C:\workspace\btk-flask
+virtualenv venv
+cd C:\workspace\btk-flask\venv\Scripts\
+.\activate.ps1
+cd C:\workspace\btk-flask
+pip --trusted-host files.pythonhosted.org install -r .\requirements.txt
+python main.py
+
+
+//para sair
+deactivate
+
+*============================================================*
+                        PARA USAR O GIT
+*============================================================*
+
+*PARA CONAR UM REPOSITORIO*
+entra ano site
+copia o link do repositorio
+no visual code, no terminal
+git clone <repositorio>
+
+
